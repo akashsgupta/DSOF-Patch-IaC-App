@@ -5,7 +5,7 @@ provider "aws" {
   skip_requesting_account_id  = true
   skip_metadata_api_check     = true
   access_key                  = TF_VAR_ACCESS_KEY
-  secret_key                  = TF_VAT_SECRET_KEY
+  secret_key                  = TF_VAR_SECRET_KEY
 }
 
 resource "aws_iam_account_password_policy" "strict" {
